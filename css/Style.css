@@ -1,8 +1,30 @@
 		body{
-			background-color: #3b5798;
+			
 		}
-		.down{
-			margin-top: 170px;
+		.fondo{
+			background: url('../Imagenes/Login1.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+			background-size: cover;
+
+		}
+		.letterwhite{
+			color: white;
+		}
+		.legal{
+			color: gray;
+			font-weight: lighter;
+			
+		}
+		.contenlegal{
+			
+		}
+
+		.up{
+
+			margin-top: 160px;
+
 		}
 		.downcolor{
 			background-color: #3b5798;
@@ -14,12 +36,18 @@
 		.labelcolorwhite{
 			font-weight: bold;
 			font-size: 16px;
+
+		}
+		.labelcolorwhit{
+			font-weight: bold;
+
+			
 		}
 		.labelbehind{
 			margin-top: -10px;
 		}
 		.labelatras{
-			z-index: -1;
+			margin-top: 20px;
 		}
 		.Login{
 			margin-top: -10px;

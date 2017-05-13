@@ -8,37 +8,40 @@
 	<link rel="stylesheet" type="text/css" href="css/Style.css">
 	<title>Login</title>
 </head>
-<body>
+<body class="fondo">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
 				
 			</div>
-			<div class="col-md-4">
-				<div class="down labelatras" align="center">
+			<div class="col-md-4 letterwhite">
+				<!-- <div class="down labelatras" align="center">
 					<label class="labelcolorwhite Login">Iniciar Sesion</label>
-				</div>
-				<div class="well labelbehind">
-					<div>
-						<label id="txtnombreusuario" class="labelcolorwhite">Usuario</label>
+				</div> -->
+					<div class="up panel-heading down letterwhite">
+						<div class="labelatras">
+							<label id="txtnombreusuario" class="labelcolorwhite ">Usuario</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control labelcolorwhit" name="inputusuario" placeholder="Usuario">
+						</div>
+						<div>
+							<label id="txtnombrecontrasena" class="labelcolorwhite ">Contraseña</label>
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control labelcolorwhit" name="inputcontrasena" placeholder="•••••••••••">
+						</div>
+						<div class="form-group " align="center">
+							<input type="submit" class="btn btn-success btnentrar" name="btnentrar" value="Entrar" style="opacity: none;">
+						</div>
 					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" name="inputusuario" class="labelcolorwhite" placeholder="Usuario">
-					</div>
-					<div>
-						<label id="txtnombrecontrasena" class="labelcolorwhite">Contraseña</label>
-					</div>
-					<div class="form-group">
-						<input type="password" class="form-control" name="inputcontrasena" placeholder="**************">
-					</div>
-					<div class="form-group" align="center">
-						<input type="submit" class="btn btn-success btnentrar" name="btnentrar" value="Entrar">
-					</div>
-				</div>
-			</div>
+				
 			</div>
 			<div class="col-md-4">
-				
+				<div class="contenlegal" align="right">
+					<label class="legal">Todos los derechos reservados
+					<br>APP Desarollada por S & C </label>
+				</div>
 			</div>
 		</div>
 	</div>
