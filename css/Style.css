@@ -11,6 +11,7 @@
 		}
 		.letterwhite{
 			color: white;
+
 		}
 		.legal{
 			color: gray;
@@ -22,9 +23,8 @@
 		}
 
 		.up{
-
 			margin-top: 160px;
-
+			background-color: rgba(0,0,0,0.6);
 		}
 		.downcolor{
 			background-color: #3b5798;

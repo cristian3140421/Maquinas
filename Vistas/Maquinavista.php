@@ -78,7 +78,6 @@
 		}
 	</style>
 	<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<!-- Acción sobre el botón con id=boton y actualizamos el div con id=capa -->
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$("#RegistrarMaquina").click(function(event) {
@@ -140,7 +139,7 @@
 					<table class="table table-condensed">
 					<tr>
 							<th>
-							<label>nombremaquina</label>
+							<label>nombre</label>
 							</td>
 							<th>
 								<label>Fecha de ingreso</label>
@@ -156,8 +155,10 @@
 							</th>
 							<th>
 								
-							</td>
-							<td></td>
+							</th>
+							<th>
+								
+							</th>
 					</tr>
 					<?php 
 							$i=0;

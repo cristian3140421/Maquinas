@@ -18,7 +18,7 @@
 				<!-- <div class="down labelatras" align="center">
 					<label class="labelcolorwhite Login">Iniciar Sesion</label>
 				</div> -->
-					<div class="up panel-heading down letterwhite">
+					<div class="up panel-heading letterwhite">
 						<div class="labelatras">
 							<label id="txtnombreusuario" class="labelcolorwhite ">Usuario</label>
 						</div>
@@ -32,7 +32,7 @@
 							<input type="password" class="form-control labelcolorwhit" name="inputcontrasena" placeholder="•••••••••••">
 						</div>
 						<div class="form-group " align="center">
-							<input type="submit" class="btn btn-success btnentrar" name="btnentrar" value="Entrar" style="opacity: none;">
+							<input type="submit" class="btn btn-success btnentrar" name="btnentrar" value="Entrar">
 						</div>
 					</div>
 				
