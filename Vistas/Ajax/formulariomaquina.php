@@ -22,8 +22,8 @@
 			<tr>
 				<td>
 					<label>Nombre</label>
-					<input type="text" name="inputnombremaquina" placeholder="Nombre"
-					class="form-control">
+					<input type="number" name="inputnombremaquina" placeholder="Nombre"
+					class="form-control" required>
 				</td>
 			</tr>
 			<tr>
@@ -37,7 +37,7 @@
 				<td>
 					<label>Denominacion</label>
 					<input type="number" name="inputdenominacionmaquina"
-					class="form-control" value="0">
+					class="form-control" placeholder="0" required>
 				</td>
 			</tr>
 			<tr>

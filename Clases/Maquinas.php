@@ -4,6 +4,7 @@
 	class Maquina{
 
 		//Atributos
+		private $id;
 		private $nombre;
 		private $fecha;
 		private $denominacion;
@@ -28,6 +29,11 @@
 			$resultado = $this->con->ConsultaRetorno($sql);
 			return $resultado;
 		}
+		public function listarformato(){
+			$sql = "Select * from tbl_Maquina where activo = 1";
+			$resultado = $this->con->ConsultaRetorno($sql);
+			return $resultado;
+		}
 		public function crearactualizar(){
 			$sql2 = "CALL USP_ConsultarMaquina ('{$this->nombre}')";
 			$resultado = $this->con->ConsultaRetorno($sql2);
@@ -41,6 +47,28 @@
 			$this->con->ConsultaSimple($sql);
 			return true;
 			}
+
+		}
+		public function actualizarmaquina(){
+			$sql="CALL USP_IngresarActualizarMaquina ('{$this->nombre}','{$this->fecha}','{$this->denominacion}','{$this->foto}')";
+			$this->con->ConsultaSimple($sql);
+			return true;
+		}
+		public function actualizarnombremaquina(){
+			$sql2 = "CALL USP_ConsultarMaquina ('{$this->nombre}')";
+			$resultado = $this->con->ConsultaRetorno($sql2);
+			$num = mysqli_num_rows($resultado);
+			while($row = mysqli_fetch_array($resultado)):
+				 @$nombremaquina = $row['NombreMaquina'];
+			endwhile;
+			if(@$nombremaquina!=""){
+				return false;
+			}
+			else{
+			 $sql="Call USP_ActualizarNombreMaquina ('{$this->id}','{$this->nombre}')";
+			$this->con->ConsultaSimple($sql);
+			return true;
+		}
 
 		}
 		public function eliminar(){
